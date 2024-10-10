@@ -11,7 +11,9 @@ class Vehiculo {
     int ano;
     double costoDiario;
     boolean disponibilidad;
+
 }
+
 
 
 
