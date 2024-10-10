@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD
-=======
 class Vehiculo {
     String idVehiculo;
     String marca;
@@ -15,7 +13,7 @@ class Vehiculo {
     boolean disponibilidad;
 
 }
->>>>>>> Jhonalzate
+
 
 
 
