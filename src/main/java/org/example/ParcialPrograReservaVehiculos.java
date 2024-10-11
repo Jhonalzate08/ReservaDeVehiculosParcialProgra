@@ -4,8 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD
-=======
+
 class Vehiculo {
     private String idVehiculo;
     String marca;
@@ -194,7 +193,7 @@ class Administrador {
 
     public List<Vehiculo> getFlota() { return flota; }
 }
->>>>>>> Develop
+
 
 
 
