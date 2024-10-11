@@ -8,9 +8,9 @@ public class Main {
 
 
         Auto auto1 = new Auto("1", "Toyota", "Corolla", 2022, 50.0, true, "Gasolina");
-        admin.anadirVehiculo(auto1);  // Cambiado 'añadir' por 'anadir'
+        admin.anadirVehiculo(auto1);
         Moto moto1 = new Moto("2", "Yamaha", "YZF-R3", 2021, 30.0, true, 300);
-        admin.anadirVehiculo(moto1);  // Cambiado 'añadir' por 'anadir'
+        admin.anadirVehiculo(moto1);
 
 
         LocalDate inicio = LocalDate.of(2023, 10, 1);
