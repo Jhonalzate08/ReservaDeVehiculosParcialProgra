@@ -1,5 +1,4 @@
 package org.example;
-
 import java.time.LocalDate;
 
 public class Main {
@@ -9,9 +8,9 @@ public class Main {
 
 
         Auto auto1 = new Auto("1", "Toyota", "Corolla", 2022, 50.0, true, "Gasolina");
-        admin.añadirVehiculo(auto1);
+        admin.anadirVehiculo(auto1);  // Cambiado 'añadir' por 'anadir'
         Moto moto1 = new Moto("2", "Yamaha", "YZF-R3", 2021, 30.0, true, 300);
-        admin.añadirVehiculo(moto1);
+        admin.anadirVehiculo(moto1);  // Cambiado 'añadir' por 'anadir'
 
 
         LocalDate inicio = LocalDate.of(2023, 10, 1);
@@ -19,13 +18,13 @@ public class Main {
         cliente.reservarVehiculo(auto1, inicio, fin, true, true);
 
 
-        boolean disponible = admin.verificarDisponibilidad(auto1, inicio, fin);
+        String disponible = admin.verificarDisponibilidad(auto1, inicio, fin);
         System.out.println("Disponibilidad del auto después de la reserva: " + disponible);
 
 
         System.out.println("Vehículos disponibles:");
         for (Vehiculo v : admin.listarVehiculosDisponibles()) {
-            System.out.println(v.marca + " " + v.modelo);
+            System.out.println(v.getMarca() + " " + v.getModelo());
         }
     }
 }

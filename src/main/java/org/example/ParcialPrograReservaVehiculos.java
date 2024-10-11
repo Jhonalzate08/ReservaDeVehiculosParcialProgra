@@ -4,10 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
-<<<<<<< HEAD
-
-=======
 class Vehiculo {
     private String idVehiculo;
     String marca;
@@ -171,17 +167,17 @@ class Administrador {
         this.flota = new ArrayList<>();
     }
 
-    public void añadirVehiculo(Vehiculo vehiculo) {
+    public void anadirVehiculo(Vehiculo vehiculo) {
         flota.add(vehiculo);
     }
 
-    public boolean verificarDisponibilidad(Vehiculo vehiculo, LocalDate fechaInicio, LocalDate fechaFin) {
+    public String verificarDisponibilidad(Vehiculo vehiculo, LocalDate fechaInicio, LocalDate fechaFin) {
         for (Vehiculo v : flota) {
-            if (v.equals(vehiculo) && vehiculo.isDisponibilidad()) {
-                return true;
+            if (v.equals(vehiculo) && !vehiculo.isDisponibilidad()) {
+                return "Reservado";
             }
         }
-        return false;
+        return "Disponible";
     }
 
     public List<Vehiculo> listarVehiculosDisponibles() {
@@ -194,10 +190,8 @@ class Administrador {
         return disponibles;
     }
 
-    // Getter y Setter
     public List<Vehiculo> getFlota() { return flota; }
 }
->>>>>>> Jhonalzate
 
 
 
